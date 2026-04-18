@@ -1,0 +1,453 @@
+{
+  "questions": [
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000001",
+      "type": "multipleChoice",
+      "category": "pmFrameworks",
+      "difficulty": "beginner",
+      "prompt": "What does RICE stand for in prioritization?",
+      "content": {
+        "type": "multipleChoice",
+        "options": ["Reach, Impact, Confidence, Effort", "Revenue, Impact, Cost, Execution", "Reach, Importance, Clarity, Estimation", "Risk, Impact, Capacity, Effort"],
+        "correctIndex": 0
+      },
+      "explanation": "RICE is a prioritization framework: Reach (users affected per period), Impact (effect per user), Confidence (certainty %), and Effort (person-months). Score = (Reach × Impact × Confidence) / Effort.",
+      "tags": ["RICE", "prioritization", "frameworks"],
+      "skillPathID": null,
+      "baseXP": 10,
+      "estimatedSeconds": 25,
+      "publishedDate": "2024-01-01T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000002",
+      "type": "multipleChoice",
+      "category": "pmFrameworks",
+      "difficulty": "intermediate",
+      "prompt": "A feature has Reach=500, Impact=2, Confidence=80%, Effort=4 person-months. What is its RICE score?",
+      "content": {
+        "type": "multipleChoice",
+        "options": ["200", "250", "100", "160"],
+        "correctIndex": 0
+      },
+      "explanation": "RICE = (500 × 2 × 0.80) / 4 = 800 / 4 = 200. Always convert Confidence to a decimal before multiplying.",
+      "tags": ["RICE", "prioritization", "calculation"],
+      "skillPathID": null,
+      "baseXP": 15,
+      "estimatedSeconds": 40,
+      "publishedDate": "2024-01-01T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000003",
+      "type": "fillInBlank",
+      "category": "pmFrameworks",
+      "difficulty": "beginner",
+      "prompt": "Complete the CIRCLES framework used for product design questions.",
+      "content": {
+        "type": "fillInBlank",
+        "template": "C-I-R-C-L-E-S stands for: ___, ___, ___, ___, ___, ___, ___",
+        "blanks": [
+          {"position": 0, "answer": "Comprehend", "alternateAnswers": [], "caseSensitive": false},
+          {"position": 1, "answer": "Identify", "alternateAnswers": [], "caseSensitive": false},
+          {"position": 2, "answer": "Report", "alternateAnswers": ["Report the customer"], "caseSensitive": false},
+          {"position": 3, "answer": "Cut", "alternateAnswers": ["Cut through prioritization"], "caseSensitive": false},
+          {"position": 4, "answer": "List", "alternateAnswers": ["List solutions"], "caseSensitive": false},
+          {"position": 5, "answer": "Evaluate", "alternateAnswers": [], "caseSensitive": false},
+          {"position": 6, "answer": "Summarize", "alternateAnswers": [], "caseSensitive": false}
+        ]
+      },
+      "explanation": "CIRCLES: Comprehend the situation, Identify the customer, Report customer needs, Cut through prioritization, List solutions, Evaluate trade-offs, Summarize your recommendation.",
+      "tags": ["CIRCLES", "product-design", "frameworks"],
+      "skillPathID": null,
+      "baseXP": 15,
+      "estimatedSeconds": 60,
+      "publishedDate": "2024-01-01T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000004",
+      "type": "trueFalse",
+      "category": "pmFrameworks",
+      "difficulty": "beginner",
+      "prompt": "In AARRR (Pirate Metrics), Retention comes before Revenue.",
+      "content": {
+        "type": "trueFalse",
+        "answer": true
+      },
+      "explanation": "AARRR order is: Acquisition → Activation → Retention → Revenue → Referral. Retention precedes Revenue because keeping users is what unlocks monetisation.",
+      "tags": ["AARRR", "growth", "frameworks"],
+      "skillPathID": null,
+      "baseXP": 10,
+      "estimatedSeconds": 20,
+      "publishedDate": "2024-01-01T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000005",
+      "type": "matching",
+      "category": "pmFrameworks",
+      "difficulty": "intermediate",
+      "prompt": "Match each prioritization framework to its primary use case.",
+      "content": {
+        "type": "matching",
+        "pairs": [
+          {"id": "p1", "left": "RICE", "right": "Quantitative feature scoring by reach & effort"},
+          {"id": "p2", "left": "MoSCoW", "right": "Release scoping: Must/Should/Could/Won't"},
+          {"id": "p3", "left": "Kano Model", "right": "Classifying features by user delight vs expectation"},
+          {"id": "p4", "left": "Jobs to Be Done", "right": "Understanding the underlying goal a user is hiring a product to fulfil"}
+        ],
+        "distractors": ["OKR goal-setting for teams"]
+      },
+      "explanation": "RICE = data-driven scoring. MoSCoW = release planning. Kano = feature satisfaction modelling. JTBD = user motivation research.",
+      "tags": ["frameworks", "prioritization", "matching"],
+      "skillPathID": null,
+      "baseXP": 15,
+      "estimatedSeconds": 60,
+      "publishedDate": "2024-01-01T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000006",
+      "type": "ordering",
+      "category": "pmFrameworks",
+      "difficulty": "beginner",
+      "prompt": "Order the Design Thinking phases correctly.",
+      "content": {
+        "type": "ordering",
+        "steps": ["Prototype", "Empathise", "Test", "Ideate", "Define"],
+        "correctOrder": [1, 4, 3, 0, 2]
+      },
+      "explanation": "Design Thinking: Empathise → Define → Ideate → Prototype → Test. Understanding users comes first; testing your prototype is always last.",
+      "tags": ["design-thinking", "frameworks", "ordering"],
+      "skillPathID": null,
+      "baseXP": 20,
+      "estimatedSeconds": 45,
+      "publishedDate": "2024-01-01T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000007",
+      "type": "scenario",
+      "category": "interviewPrep",
+      "difficulty": "intermediate",
+      "prompt": "You're the PM for Spotify. DAU dropped 15% week-over-week. What's your first step?",
+      "content": {
+        "type": "scenario",
+        "scenarioText": "It's Monday morning. Your data team alerts you that Spotify's DAU dropped 15% compared to the same week last month. No known outages were reported. You have a leadership sync in 2 hours.",
+        "options": [
+          "Diagnose the drop by segmenting data (platform, geography, user cohort, feature usage) before drawing conclusions",
+          "Immediately escalate to engineering to roll back the last deployment",
+          "Send a user survey to understand why people stopped using the app",
+          "Review competitor apps to see if they launched something new"
+        ],
+        "correctIndex": 0
+      },
+      "explanation": "Always diagnose before acting. Segment the drop by platform, region, new vs returning users, and feature funnel to isolate the root cause. Rollbacks and surveys are premature without knowing where the drop originated.",
+      "tags": ["metrics", "diagnosis", "interview-prep", "Spotify"],
+      "skillPathID": null,
+      "baseXP": 20,
+      "estimatedSeconds": 60,
+      "publishedDate": "2024-01-01T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000008",
+      "type": "multipleChoice",
+      "category": "interviewPrep",
+      "difficulty": "intermediate",
+      "prompt": "What is a 'North Star Metric' and why do PMs use it?",
+      "content": {
+        "type": "multipleChoice",
+        "options": [
+          "A single metric that best captures the core value delivered to customers, aligning the whole team",
+          "The revenue target set by the CEO for the quarter",
+          "The metric with the highest statistical correlation to churn",
+          "A vanity metric used in investor presentations"
+        ],
+        "correctIndex": 0
+      },
+      "explanation": "The North Star Metric (NSM) captures the core value your product delivers. For Airbnb it's 'nights booked'; for Slack it's 'messages sent'. It aligns teams on what truly matters beyond surface-level metrics.",
+      "tags": ["metrics", "north-star", "strategy"],
+      "skillPathID": null,
+      "baseXP": 15,
+      "estimatedSeconds": 35,
+      "publishedDate": "2024-01-01T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000009",
+      "type": "scenario",
+      "category": "interviewPrep",
+      "difficulty": "advanced",
+      "prompt": "Meta asks: 'Design a feature to improve meaningful social interaction on Facebook.' How do you approach this?",
+      "content": {
+        "type": "scenario",
+        "scenarioText": "You're in a Meta PM interview. The interviewer asks you to design a feature that improves 'meaningful social interaction' on Facebook. You have 20 minutes.",
+        "options": [
+          "Clarify what 'meaningful' means, identify user segments, define the problem, then propose 2-3 solutions with trade-offs",
+          "Jump straight into proposing a feature like 'interest-based group recommendations'",
+          "Ask for the current metrics on social interactions before suggesting anything",
+          "Reference Zuckerberg's 2018 blog post on meaningful interactions as your framework"
+        ],
+        "correctIndex": 0
+      },
+      "explanation": "Use CIRCLES: Clarify the goal first (what is 'meaningful'?), identify who you're designing for, then propose targeted solutions. Jumping to solutions without clarification is the most common interview mistake.",
+      "tags": ["product-design", "Meta", "CIRCLES", "interview-prep"],
+      "skillPathID": null,
+      "baseXP": 20,
+      "estimatedSeconds": 90,
+      "publishedDate": "2024-01-01T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000010",
+      "type": "trueFalse",
+      "category": "interviewPrep",
+      "difficulty": "intermediate",
+      "prompt": "In a PM interview, you should always pick the most technically impressive solution to show engineering depth.",
+      "content": {
+        "type": "trueFalse",
+        "answer": false
+      },
+      "explanation": "PMs should pick solutions based on user value, feasibility, and strategic fit — not technical complexity. Interviewers want to see customer-centric thinking and trade-off analysis, not engineering showmanship.",
+      "tags": ["interview-tips", "product-thinking"],
+      "skillPathID": null,
+      "baseXP": 10,
+      "estimatedSeconds": 20,
+      "publishedDate": "2024-01-01T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000011",
+      "type": "multipleChoice",
+      "category": "aiTechFundamentals",
+      "difficulty": "beginner",
+      "prompt": "What is the key difference between supervised and unsupervised machine learning?",
+      "content": {
+        "type": "multipleChoice",
+        "options": [
+          "Supervised uses labelled training data; unsupervised finds patterns in unlabelled data",
+          "Supervised runs on servers; unsupervised runs on devices",
+          "Supervised is used for images; unsupervised is used for text",
+          "Supervised is more expensive; unsupervised is free"
+        ],
+        "correctIndex": 0
+      },
+      "explanation": "Supervised learning trains on labelled examples (e.g., spam/not-spam emails). Unsupervised learning finds structure in unlabelled data (e.g., clustering users by behaviour). As a PM, knowing this helps you understand data requirements for AI features.",
+      "tags": ["AI", "ML", "fundamentals"],
+      "skillPathID": null,
+      "baseXP": 10,
+      "estimatedSeconds": 30,
+      "publishedDate": "2024-01-01T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000012",
+      "type": "multipleChoice",
+      "category": "aiTechFundamentals",
+      "difficulty": "intermediate",
+      "prompt": "Your team is building an AI content moderation feature. The model has 95% accuracy but misses 40% of harmful posts. What metric explains this?",
+      "content": {
+        "type": "multipleChoice",
+        "options": [
+          "Low recall — the model fails to catch many true positives (harmful posts)",
+          "Low precision — the model flags too many false positives",
+          "High F1 score — the model is performing well overall",
+          "Low specificity — the model is too aggressive in flagging safe content"
+        ],
+        "correctIndex": 0
+      },
+      "explanation": "Recall = True Positives / (True Positives + False Negatives). Missing 40% of harmful posts = low recall. For safety-critical features, you typically optimise for recall even at the cost of precision.",
+      "tags": ["AI", "recall", "precision", "metrics", "moderation"],
+      "skillPathID": null,
+      "baseXP": 15,
+      "estimatedSeconds": 45,
+      "publishedDate": "2024-01-01T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000013",
+      "type": "trueFalse",
+      "category": "aiTechFundamentals",
+      "difficulty": "beginner",
+      "prompt": "Large Language Models (LLMs) like GPT-4 generate text by predicting the most likely next token based on the input context.",
+      "content": {
+        "type": "trueFalse",
+        "answer": true
+      },
+      "explanation": "LLMs are autoregressive models trained to predict the next token in a sequence. They don't 'understand' language — they statistically model relationships between tokens, which produces human-like text.",
+      "tags": ["LLM", "AI", "fundamentals"],
+      "skillPathID": null,
+      "baseXP": 10,
+      "estimatedSeconds": 20,
+      "publishedDate": "2024-01-01T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000014",
+      "type": "scenario",
+      "category": "aiTechFundamentals",
+      "difficulty": "intermediate",
+      "prompt": "Your AI recommendation engine is great in testing but users don't engage with its suggestions in production. What's the most likely cause?",
+      "content": {
+        "type": "scenario",
+        "scenarioText": "You launched an AI-powered 'recommended for you' feature. Offline testing showed high accuracy. But after 3 weeks in production, CTR on recommendations is 2% vs 8% on manually curated content.",
+        "options": [
+          "Training-serving skew — the model was trained on historical data that doesn't reflect current user behaviour",
+          "The model architecture is wrong and needs to be retrained from scratch",
+          "Users don't trust AI recommendations and prefer human curation",
+          "The feature needs more A/B test traffic before drawing conclusions"
+        ],
+        "correctIndex": 0
+      },
+      "explanation": "Training-serving skew is a common root cause: offline metrics look great because the model was evaluated on data similar to its training set. In production, data distribution shifts (new users, new content) degrade performance. Always monitor online metrics separately.",
+      "tags": ["AI", "ML-ops", "recommendations", "training-serving-skew"],
+      "skillPathID": null,
+      "baseXP": 20,
+      "estimatedSeconds": 60,
+      "publishedDate": "2024-01-01T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000015",
+      "type": "multipleChoice",
+      "category": "currentEvents",
+      "difficulty": "intermediate",
+      "prompt": "OpenAI's 'o1' and 'o3' model series introduced a new capability compared to standard GPT models. What was the key advancement?",
+      "content": {
+        "type": "multipleChoice",
+        "options": [
+          "Chain-of-thought reasoning: the model 'thinks' before responding, dramatically improving complex problem-solving",
+          "Real-time internet browsing built into the base model",
+          "Multimodal video generation capabilities",
+          "Sub-100ms response latency for mobile applications"
+        ],
+        "correctIndex": 0
+      },
+      "explanation": "The 'o' model series introduced test-time compute scaling via chain-of-thought reasoning. By spending more compute at inference time, the model works through problems step-by-step, improving performance on math, coding, and complex reasoning significantly over GPT-4.",
+      "tags": ["OpenAI", "o1", "reasoning", "LLM", "current-events"],
+      "skillPathID": null,
+      "baseXP": 15,
+      "estimatedSeconds": 40,
+      "publishedDate": "2024-01-15T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000016",
+      "type": "scenario",
+      "category": "currentEvents",
+      "difficulty": "advanced",
+      "prompt": "Apple announced Apple Intelligence features in iOS 18. As a PM at a competing mobile platform, how should you respond?",
+      "content": {
+        "type": "scenario",
+        "scenarioText": "Apple Intelligence integrates on-device LLM capabilities into iOS 18: smart replies, writing tools, photo search, and priority notifications. It's available on iPhone 16 and newer. You're a PM at a competing Android OEM.",
+        "options": [
+          "Identify where your platform has structural advantages (openness, customisation, price tiers) and accelerate AI features that Apple's closed ecosystem can't match",
+          "Match Apple's feature set exactly to avoid losing market share",
+          "Wait 12 months to see user adoption data before committing resources",
+          "Focus marketing on Apple's privacy limitations as a counter-narrative"
+        ],
+        "correctIndex": 0
+      },
+      "explanation": "Good strategy isn't copying competitors — it's finding asymmetric advantages. Android's openness enables deeper third-party AI integrations, broader price tiers enable AI democratisation, and on-device models can be more customisable. Matching Apple feature-for-feature on their turf is rarely a winning strategy.",
+      "tags": ["Apple-Intelligence", "competitive-strategy", "AI", "current-events"],
+      "skillPathID": null,
+      "baseXP": 20,
+      "estimatedSeconds": 90,
+      "publishedDate": "2024-01-15T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000017",
+      "type": "multipleChoice",
+      "category": "currentEvents",
+      "difficulty": "intermediate",
+      "prompt": "What is 'vibe coding' and why is it relevant for PMs in 2025?",
+      "content": {
+        "type": "multipleChoice",
+        "options": [
+          "Using AI coding assistants (like Cursor or GitHub Copilot) to build software through natural language prompts, lowering the barrier to prototyping",
+          "A coding methodology that prioritises team morale and culture over technical velocity",
+          "An open-source framework for building real-time collaborative apps",
+          "A product management technique for rapid ideation without engineering resources"
+        ],
+        "correctIndex": 0
+      },
+      "explanation": "Vibe coding (coined 2025) refers to building software primarily through AI prompting. For PMs, it means you can now prototype real features — not just wireframes — reducing the design-to-validation cycle from weeks to hours. It changes the PM skillset required.",
+      "tags": ["vibe-coding", "AI-tools", "prototyping", "current-events", "2025"],
+      "skillPathID": null,
+      "baseXP": 15,
+      "estimatedSeconds": 35,
+      "publishedDate": "2025-01-01T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000018",
+      "type": "trueFalse",
+      "category": "currentEvents",
+      "difficulty": "beginner",
+      "prompt": "Anthropic's Claude, Google's Gemini, and OpenAI's GPT-4 are all examples of frontier large language models competing in the same market.",
+      "content": {
+        "type": "trueFalse",
+        "answer": true
+      },
+      "explanation": "All three are frontier LLMs from well-funded AI labs. As a PM, you should know the key differentiators: Claude (long context, safety focus), Gemini (Google ecosystem integration, multimodal), GPT-4 (broad ecosystem, developer tooling). Each has different strengths relevant to product decisions.",
+      "tags": ["LLM", "competitive-landscape", "Anthropic", "Google", "OpenAI"],
+      "skillPathID": null,
+      "baseXP": 10,
+      "estimatedSeconds": 20,
+      "publishedDate": "2024-06-01T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000019",
+      "type": "ordering",
+      "category": "interviewPrep",
+      "difficulty": "intermediate",
+      "prompt": "Order these steps of a PM's go-to-market (GTM) planning process.",
+      "content": {
+        "type": "ordering",
+        "steps": [
+          "Define target customer segment and ICP",
+          "Set pricing and packaging",
+          "Launch and monitor KPIs",
+          "Identify value proposition and messaging",
+          "Plan distribution channels"
+        ],
+        "correctOrder": [0, 3, 1, 4, 2]
+      },
+      "explanation": "GTM order: 1) Define who you're targeting (ICP), 2) Define your value proposition, 3) Set pricing, 4) Choose channels, 5) Launch and measure. Skipping ICP definition is the most common GTM failure mode.",
+      "tags": ["GTM", "go-to-market", "strategy", "interview-prep"],
+      "skillPathID": null,
+      "baseXP": 20,
+      "estimatedSeconds": 50,
+      "publishedDate": "2024-01-01T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000020",
+      "type": "matching",
+      "category": "aiTechFundamentals",
+      "difficulty": "intermediate",
+      "prompt": "Match each AI/ML concept to its correct definition.",
+      "content": {
+        "type": "matching",
+        "pairs": [
+          {"id": "m1", "left": "Hallucination", "right": "LLM confidently generates factually incorrect information"},
+          {"id": "m2", "left": "RAG", "right": "Augmenting an LLM with retrieved external documents at inference time"},
+          {"id": "m3", "left": "Fine-tuning", "right": "Further training a pre-trained model on domain-specific data"},
+          {"id": "m4", "left": "Prompt engineering", "right": "Crafting inputs to guide an LLM toward desired outputs without retraining"}
+        ],
+        "distractors": ["Training a model from random weights on new data"]
+      },
+      "explanation": "Hallucination = fabricated facts. RAG = Retrieval Augmented Generation for grounding LLMs in real documents. Fine-tuning = adjusting weights on new data. Prompt engineering = input design. As a PM, knowing these helps scope AI feature work accurately.",
+      "tags": ["AI", "LLM", "RAG", "fine-tuning", "hallucination"],
+      "skillPathID": null,
+      "baseXP": 15,
+      "estimatedSeconds": 60,
+      "publishedDate": "2024-01-01T00:00:00Z",
+      "version": 1
+    }
+  ]
+}

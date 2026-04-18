@@ -1,0 +1,73 @@
+name: PMDailyQuestions
+options:
+  bundleIdPrefix: com.pmquestions
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "15.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+
+targets:
+  PMDailyQuestions:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: PMDailyQuestions
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.pmquestions.app
+        INFOPLIST_FILE: PMDailyQuestions/Info.plist
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: ""
+        TARGETED_DEVICE_FAMILY: "1"
+    entitlements:
+      path: PMDailyQuestions/PMDailyQuestions.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.pmquestions.shared
+    info:
+      path: PMDailyQuestions/Info.plist
+      properties:
+        CFBundleName: PM Daily
+        CFBundleDisplayName: PM Daily
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        UILaunchStoryboardName: LaunchScreen
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        NSUserNotificationsUsageDescription: "Get daily reminders to complete your PM challenges and protect your streak."
+        UIBackgroundModes:
+          - fetch
+        BGTaskSchedulerPermittedIdentifiers:
+          - com.pmquestions.streak-check
+    dependencies:
+      - target: PMDailyQuestionsWidget
+
+  PMDailyQuestionsWidget:
+    type: app-extension
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: PMDailyQuestionsWidget
+      - path: PMDailyQuestions/Models/WidgetEntry.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.pmquestions.app.widget
+        INFOPLIST_FILE: PMDailyQuestionsWidget/Info.plist
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: ""
+    entitlements:
+      path: PMDailyQuestionsWidget/PMDailyQuestionsWidget.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.pmquestions.shared
+    info:
+      path: PMDailyQuestionsWidget/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
