@@ -11,7 +11,7 @@ final class BundleQuestionLoader {
 
         // Check App Group cache first (fresher Supabase-synced questions)
         if let appGroupURL = FileManager.default.containerURL(
-            forSecurityApplicationGroupIdentifier: PersistenceController.appGroupID
+            forSecurityApplicationGroupIdentifier: SharedConstants.appGroupID
         ) {
             let cacheURL = appGroupURL.appendingPathComponent("questions_cache.json")
             if let data = try? Data(contentsOf: cacheURL),
@@ -37,7 +37,7 @@ final class BundleQuestionLoader {
 
     func saveToAppGroupCache(_ questions: [Question]) {
         guard let appGroupURL = FileManager.default.containerURL(
-            forSecurityApplicationGroupIdentifier: PersistenceController.appGroupID
+            forSecurityApplicationGroupIdentifier: SharedConstants.appGroupID
         ) else { return }
         let cacheURL = appGroupURL.appendingPathComponent("questions_cache.json")
         let encoder = JSONEncoder()

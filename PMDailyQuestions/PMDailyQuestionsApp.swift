@@ -15,6 +15,21 @@ struct PMDailyQuestionsApp: App {
                 .onAppear {
                     registerBackgroundTasks()
                 }
+                .onOpenURL { url in
+                    handleDeepLink(url)
+                }
+        }
+    }
+
+    private func handleDeepLink(_ url: URL) {
+        guard url.scheme == SharedConstants.deepLinkScheme else { return }
+        switch url.host {
+        case "start-session":
+            appState.activeTab = .home
+        case "leaderboard":
+            appState.activeTab = .leaderboard
+        default:
+            break
         }
     }
 

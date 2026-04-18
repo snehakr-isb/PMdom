@@ -87,6 +87,16 @@ final class SessionViewModel {
         appState.userProgress?.recordAttempt(wasCorrect: wasCorrect)
         appState.todaysChallenge?.markCompleted(questionID: question.id, xpEarned: xp)
 
+        let attempt = QuestionAttempt(
+            questionID: question.id,
+            category: question.category,
+            difficulty: question.difficulty,
+            wasCorrect: wasCorrect,
+            timeSpentSeconds: timeSpent,
+            xpEarned: xp
+        )
+        sessionAttempts.append(attempt)
+
         sessionXP += xp
         if wasCorrect { sessionCorrect += 1 }
         lastAnswerWasCorrect = wasCorrect

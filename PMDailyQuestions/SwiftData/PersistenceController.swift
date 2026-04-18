@@ -4,7 +4,7 @@ import SwiftData
 @MainActor
 final class PersistenceController {
     static let shared = PersistenceController()
-    static let appGroupID = "group.com.pmquestions.shared"
+    static var appGroupID: String { SharedConstants.appGroupID }
 
     let container: ModelContainer
 

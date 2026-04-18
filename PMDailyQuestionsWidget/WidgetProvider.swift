@@ -61,7 +61,7 @@ struct PMWidgetProvider: TimelineProvider {
     private func makeContainer() throws -> ModelContainer {
         let schema = Schema([DailyChallenge.self, UserProgress.self, Streak.self])
         guard let groupURL = FileManager.default.containerURL(
-            forSecurityApplicationGroupIdentifier: "group.com.pmquestions.shared"
+            forSecurityApplicationGroupIdentifier: SharedConstants.appGroupID
         ) else { throw NSError(domain: "Widget", code: 1) }
         let storeURL = groupURL.appendingPathComponent("pmdaily.store")
         let config = ModelConfiguration(schema: schema, url: storeURL, isStoredInMemoryOnly: false)

@@ -45,6 +45,10 @@ targets:
           - fetch
         BGTaskSchedulerPermittedIdentifiers:
           - com.pmquestions.streak-check
+        CFBundleURLTypes:
+          - CFBundleURLName: com.pmquestions.deeplink
+            CFBundleURLSchemes:
+              - pmquestions
     dependencies:
       - target: PMDailyQuestionsWidget
 
@@ -54,7 +58,14 @@ targets:
     deploymentTarget: "17.0"
     sources:
       - path: PMDailyQuestionsWidget
+      # Shared model + data files needed by the widget extension
+      - path: PMDailyQuestions/Shared/SharedConstants.swift
       - path: PMDailyQuestions/Models/WidgetEntry.swift
+      - path: PMDailyQuestions/Models/Question.swift
+      - path: PMDailyQuestions/Models/DailyChallenge.swift
+      - path: PMDailyQuestions/Models/UserProgress.swift
+      - path: PMDailyQuestions/Models/Streak.swift
+      - path: PMDailyQuestions/Repositories/LeaderboardRepository.swift
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.pmquestions.app.widget
